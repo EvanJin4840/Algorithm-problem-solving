@@ -18,10 +18,14 @@ class Main{
             flag = false;
             for(int j = 0 ; j<arrl.size(); j++){
                 if(arr[i] == arrl.get(j)){
-                    
+                    flag = true;
                 }
             }
+            if(flag == false){
+                arrl.add(arr[i]);
+            }
         }
+        System.out.println(arrl.size());
     }
 }
 

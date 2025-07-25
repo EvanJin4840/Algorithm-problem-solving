@@ -17,7 +17,7 @@ class Main{
         }
         int max = 0;
         for(int i =1 ; i < arr.size() ; i++){
-            if(arr.get(max) > arr.get(i)){
+            if(arr.get(max) < arr.get(i)){
                 max = i;
             }
         }
